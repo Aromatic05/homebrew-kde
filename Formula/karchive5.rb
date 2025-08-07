@@ -1,4 +1,4 @@
-class Karchive < Formula
+class Karchive5 < Formula
   desc "Reading, creating, and manipulating file archives"
   homepage "https://api.kde.org/frameworks/karchive/html/index.html"
   license all_of: [
@@ -17,16 +17,6 @@ class Karchive < Formula
   livecheck do
     url "https://download.kde.org/stable/frameworks/"
     regex(%r{href=.*?v?(\d+(?:\.\d+)+)/?["' >]}i)
-  end
-
-  bottle do
-    sha256 cellar: :any,                 arm64_sonoma:   "06ff3d8ab813b89a23d09ac19cf2ec0c4b28926312ae16517dcc913b12491ff8"
-    sha256 cellar: :any,                 arm64_ventura:  "61ed11fee5d6f3c182316c86d92b09dca40990d8c57d09697a16130a437ba0ad"
-    sha256 cellar: :any,                 arm64_monterey: "ef90a556aed83c4c12180bb8c181fa003effdb6370a7f10d5014e75a15d07b6c"
-    sha256 cellar: :any,                 sonoma:         "8c920762159f58083550387e9a5a6d2f6937da929abfb34b7c8d2f93799ea23d"
-    sha256 cellar: :any,                 ventura:        "582d372caed1fcc6e7ed1eadbcf834428b0392168a068edc93aaf56b58ba7b0e"
-    sha256 cellar: :any,                 monterey:       "1bf15111ec97b3f04d18e056371a2207f1d04755a11f20bcb413dcdcff6b2a9b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "85386f99944fb030743db5b0e2042dc1aa4b62d57f6ff2122022af1134f9c755"
   end
 
   head do

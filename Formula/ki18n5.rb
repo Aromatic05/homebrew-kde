@@ -1,4 +1,4 @@
-class Ki18n < Formula
+class Ki18n5 < Formula
   desc "KDE Gettext-based UI text internationalization"
   homepage "https://api.kde.org/frameworks/ki18n/html/index.html"
   license all_of: [
@@ -16,16 +16,6 @@ class Ki18n < Formula
   livecheck do
     url "https://download.kde.org/stable/frameworks/"
     regex(%r{href=.*?v?(\d+(?:\.\d+)+)/?["' >]}i)
-  end
-
-  bottle do
-    sha256 arm64_sonoma:   "f675a187e8fc3705e218dfb744cc5e1dfb2e05c64ae42a6a23a0116b810e13c6"
-    sha256 arm64_ventura:  "e8699f7cbcac22838fcfc9bd7dec107629226d30c07a525ead8fa79f52142f1d"
-    sha256 arm64_monterey: "ccaebb1539d77ad8713965303921511d6637d7b0ecb1b344c78b25b063b51420"
-    sha256 sonoma:         "a64c78221a4c43ddd5335df6d7e16dd5498ea271da64f9f694dd1a5abfc47f6e"
-    sha256 ventura:        "8fd24d63b3768f4f671b01f690e846f373d1e556a840caea34f7164d03b0f8ac"
-    sha256 monterey:       "d4edc373fa84d617469cc31fac3ad2c862931eff48ee287e6ab6d459b5419cb3"
-    sha256 x86_64_linux:   "3d33b503c316011aff0c1d30cc2b6070fbbba597629d0f20a1cb8ba37eee2dda"
   end
 
   head do
